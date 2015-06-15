@@ -1,0 +1,14 @@
+.wrapper
+{
+	width: 970px;
+	margin: 0 auto;
+}
+
+.content-bg{
+	width: 970px;
+	height: 480px;
+	background:url(descarga.jpg);
+	background-repeat: no-repeat;
+	background-size: 100%
+
+}

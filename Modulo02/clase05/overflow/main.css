@@ -1,0 +1,48 @@
+.wrapper
+{
+	width: 970px;
+	margin: 0 auto;
+
+}
+.box
+{
+	
+	
+}
+
+.uno{
+
+	float: left;
+	width: 2000px;
+}
+.uno img{
+	width: 320px;
+
+}
+
+.dos{
+
+	width: 323px;
+	float: left;
+}
+.tres{
+	
+	width: 323px;
+	float: left;
+}
+.clear{
+	clear: both;
+}
+
+.contenedor-over
+{
+
+	width:970px;
+	height: 174px;
+	overflow:scroll;
+}
+.art{
+	`width: 970px;
+	height: 200px;
+	background-color: red;
+}

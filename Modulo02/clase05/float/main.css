@@ -1,0 +1,30 @@
+.wrapper
+{
+	width: 970px;
+	margin: 0 auto;
+	background-color: yellow;
+}
+.box
+{
+	
+	height: 300px;
+}
+
+.uno{
+	background-color: red;
+float: left;
+	width: 485px;
+}
+.dos{
+	background-color: blue;
+	width: 485px;
+	float: left;
+}
+.tres{
+	background-color: green;
+	width: 500px;
+	float: left;
+}
+.clear{
+	clear: both;
+}
