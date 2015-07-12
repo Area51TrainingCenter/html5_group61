@@ -1,0 +1,40 @@
+<!-- referencia a una lista de eventos http://librosweb.es/libro/javascript/capitulo_6/modelo_basico_de_eventos_2.html-->
+<!--http://www.w3schools.com/jsref/dom_obj_event.asp-->
+ <html>
+<body>
+
+<p id="p2" onclick="miprimerafuncion()">Hello World!</p>
+
+
+
+<p>The paragraph above was changed by a script.</p>
+<strong id="boton"> procesar</strong>
+</body>
+</html> 
+<style>
+.btnProcesar{
+	background-color: black;
+	color:white;
+	padding: 10px;
+	border-radius: 10px;
+	transition:all 1s linear;
+}
+</style>
+
+<script>
+
+/*document.getElementById('boton').onclick= function(){
+  alert("hola soy un boton");
+ }*/
+
+ document.getElementById('boton').onclick= hola;
+
+function hola()
+{
+	alert("HOLA");
+}
+function miprimerafuncion(){
+	document.getElementById("boton").className="btnProcesar";
+}
+//las propiedad que puedo modificar las puedo documentar en http://www.w3schools.com/jsref/dom_obj_style.asp
+</script>
