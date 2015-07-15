@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="../jquery.js"></script>
+<script> 
+$(document).ready(function(){
+    $("#inicio").click(function(){
+        $("div").animate({
+            left: '350px',
+            opacity: '0.5',
+            height: '550px',
+            width: '550px'
+        });
+    });
+
+
+    $("#fin").click(function(){
+        $("div").animate({
+            left: '0px',
+            opacity: '2',
+            height: '100px',
+            width: '100px'
+        });
+    });
+
+
+
+
+});
+</script> 
+</head>
+<body>
+
+<span id="inicio">incio Animation</span>
+<span id="fin">fin Animation</span>
+
+
+<div style="background:red;height:100px;width:100px;position:absolute;"></div>
+
+</body>
+</html>

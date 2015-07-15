@@ -1,0 +1,62 @@
+<!doctype html>
+<html>
+	<head>
+	<title>Usando JS</title>
+	<script type="text/javascript" src="../jquery.js"></script>
+	<script type="text/javascript" src="main.js"></script>
+	</head>
+	<body>
+		<div class="wrapper">
+
+		<header>
+			<nav class="menu">
+				<ul >
+					<li class="op1 no-edit" >Opcion 1</li>
+					<li class="op2 no-edit">Opcion 2</li>
+					<li class="op3 no-edit">Opcion 3</li>
+					<li class="op4 no-edit">Opcion 4</li>
+				</ul>
+			</nav>
+		</header>
+		</div>
+	</body>
+</html>
+
+
+<style>
+*{margin: 0;padding: 0;}
+.wrapper{width: 970px;margin: 0 auto;}
+.menu{
+	background-color: black;
+
+
+}
+
+.menu li{
+	display: inline-block;
+	color:white;
+	padding: 10px;
+	transition : all 1s lienar;
+}
+
+
+.active{
+	background-color: white;
+	color: black!important;
+}
+
+.no-edit
+{
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-o-user-select: none;
+	user-select: none;
+	cursor: pointer;
+}
+
+
+
+
+
+</style>
