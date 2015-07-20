@@ -1,0 +1,28 @@
+<!-- referencia a una lista de eventos http://librosweb.es/libro/javascript/capitulo_6/modelo_basico_de_eventos_2.html-->
+<!--http://www.w3schools.com/jsref/dom_obj_event.asp-->
+ <html>
+<body>
+
+<p id="p2" onclick="hola()">Hello World!</p>
+
+
+
+<p>The paragraph above was changed by a script.</p>
+
+</body>
+</html> 
+
+
+<script>
+function hola(){
+	alert("hola");
+}
+document.getElementById("p2").style.color = "white";
+document.getElementById("p2").style.fontSize = "41";
+document.getElementById("p2").style.lineHeight = "1.5";
+document.getElementById("p2").style.backgroundColor = "black";
+document.getElementById("p2").style.margin = "50px 10px 20px 30px";
+document.getElementById("p2").style.opacity = "0.5";
+
+//las propiedad que puedo modificar las puedo documentar en http://www.w3schools.com/jsref/dom_obj_style.asp
+</script>

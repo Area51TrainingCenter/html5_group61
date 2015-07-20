@@ -1,0 +1,103 @@
+ <!DOCTYPE html>
+<html>
+<head>
+	
+</head>
+<body>
+<form action="" method="POST" onsubmit="return validarDatos()">
+	<label>ingresa tu nombre</label>
+	<input type="text" id="nombre"><br>
+	<label>ingresa tu apellidos</label>
+	<input type="text" id="apellidos"><br>
+	<label>ingresa tu edad</label>
+	<input type="text" id="edad"><br>
+	<label>ingresa tu correo</label>
+	<input type="text" id="correo"><br>
+	<!--<span id="procesar">procesar</span>-->
+	<button>Procesar con Boton</button>
+</form>
+<!--<input type="submit" value="procesar"> -->
+<span id="mensaje"></span>
+
+
+</body>
+
+<script type="text/javascript">
+  
+/*
+  document.getElementById("procesar").onclick=function(){
+  var nombre =document.getElementById('nombre').value;
+  var apellidos =document.getElementById('apellidos').value;
+  var edad =document.getElementById('edad').value;
+  var correo =document.getElementById('correo').value;
+  if(nombre=="")
+  {
+  	document.getElementById('mensaje').innerHTML="INGRESE EL NOMBRE";
+  }
+  else if(apellidos=="")
+  {
+  	document.getElementById('mensaje').innerHTML="INGRESE EL APELLIDOS";
+  }
+  else if(edad=="")
+  {
+  	document.getElementById('mensaje').innerHTML="INGRESE EL EDAD";
+  }
+  else if(correo=="")
+  {
+  	document.getElementById('mensaje').innerHTML="INGRESE EL CORREO";
+  }
+  else 
+  {
+  	document.getElementById('mensaje').innerHTML="";
+  }
+
+
+
+
+
+ }
+*/
+
+function validarDatos(){
+ var nombre =document.getElementById('nombre').value;
+  var apellidos =document.getElementById('apellidos').value;
+  var edad =parseInt(document.getElementById('edad').value);
+  var correo =document.getElementById('correo').value;
+  estado=false;
+  if(nombre=="")
+  {
+  	   document.getElementById('mensaje').innerHTML="<strong class='nombre' style='color:red;'>INGRESE EL NOMBRE</strong>";
+  }
+  else if(apellidos=="")
+  {
+  	document.getElementById('mensaje').innerHTML="INGRESE EL APELLIDOS";
+  }
+  else if(edad=="")
+  {
+  	document.getElementById('mensaje').innerHTML="INGRESE EL EDAD";
+  }
+  else if(correo=="")
+  {
+  	document.getElementById('mensaje').innerHTML="INGRESE EL CORREO";
+  }
+   else if(edad<18)
+  {
+  	document.getElementById('mensaje').innerHTML="eres menor de edad";
+  }
+
+  else 
+  {
+  	estado=true;
+  }
+
+  
+
+
+
+
+
+return estado;
+}
+
+	
+</script>
