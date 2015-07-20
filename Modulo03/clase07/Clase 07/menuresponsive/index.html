@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript" src="../jquery.js"></script>
+</head>
+<body>
+<div class="wrapper">
+<header>
+	<nav>
+	<ul class="menu">
+		<li class="navrsp">MENU</li>
+		
+		<div class="navopc">
+		<li>Opcion1</li>
+		<li>Opcion2</li>
+		<li>Opcion3</li>
+		<li>Opcion4</li>
+		<li>Opcion4</li>
+		</div>
+	</ul>
+	</nav>	
+</header>
+</div>
+</body>
+</html>
+
+<style type="text/css">
+
+	.wrapper{width: 970px;margin:0 auto;}
+	.menu{background-color: black ;color: white}
+	.menu li{display: inline-block;padding: 10px}
+	li.navrsp{display: none}
+	
+   @media (max-width: 970px){
+   	.wrapper{width: 100%}
+   	.menu li{display: block ;}
+   	li.navrsp{display: block ;text-align: right}
+   
+   }
+
+</style>
+
+<script type="text/javascript">
+	$(".navrsp").click(function(){
+		$(".navopc").toggle("slow")
+	})
+
+</script>
